@@ -1,6 +1,6 @@
-# biltz
+# Biltz
 
-Orquestra agentes de codificação (gemini, claude, kimi, cursor) executando tarefas de `tasks.md` no formato OpenSpec.
+Biltz é um orquestrador de agentes de codificação local (gemini, claude, kimi, cursor) executando tarefas de `tasks.md` no formato OpenSpec.
 
 ## Quickstart
 
