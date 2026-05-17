@@ -1,0 +1,41 @@
+{
+  "name": "biltz",
+  "version": "0.2.0",
+  "description": "Orquestra agentes de codificação executando tarefas OpenSpec",
+  "main": "dist/cli.cjs",
+  "module": "dist/cli.mjs",
+  "types": "dist/cli.d.ts",
+  "bin": {
+    "biltz": "./bin/biltz"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["cli", "agent", "orchestrator", "openspec"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "@inquirer/prompts": "^7.0.0",
+    "yaml": "^2.5.0",
+    "zod": "^3.23.0",
+    "pino": "^9.0.0",
+    "pino-pretty": "^11.0.0",
+    "tinyglobby": "^0.2.0",
+    "proper-lockfile": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/proper-lockfile": "^4.1.4",
+    "tsup": "^8.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.0.0"
+  }
+}
